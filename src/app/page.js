@@ -6,7 +6,6 @@ import CoinFlipContract from './contracts/CoinFlipContract.json';
 import { Button, Skeleton, Box } from '@mui/material';
 import PlaceBet from './components/PlaceBet';
 import { RefreshCw } from 'lucide-react';
-import "./styling.css"
 
 const ethers = require("ethers");
 
