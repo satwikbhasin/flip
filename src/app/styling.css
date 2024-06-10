@@ -1,0 +1,38 @@
+.custom-navbar {
+  background: hsla(152, 28%, 20%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(152, 28%, 20%, 1) 0%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(152, 28%, 20%, 1) 0%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(152, 28%, 20%, 1) 0%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#244033", endColorstr="#000000", GradientType=1 );
+
+  border-radius: 10px;
+}
+
+.rotate {
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
