@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## FLIP - A Decentralized Coin Flip Betting App Built on Ethereum
 
-## Getting Started
+### Overview
+FLIP is a decentralized application (dApp) that allows users to bet on the flip of a coin. Built on the Ethereum blockchain, it ensures transparency and fairness in every bet.
 
-First, run the development server:
+### Features
+- **Decentralized Betting:** Place bets on a simple coin flip with full transparency ensured by Ethereum smart contracts.
+- **Secure and Fair:** Leveraging blockchain technology, every bet outcome is verifiable and immutable.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Smart Contract Deployment
+The smart contract that powers FLIP is located in the "Smart Contract" folder. Follow the steps below to compile and deploy it on a local Ethereum network using Truffle and Ganache:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Compile the Smart Contract:**
+   ```bash
+   truffle compile
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2. **Deploy the Smart Contract:**
+   ```bash
+   truffle migrate --network development
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Prerequisites
+Ensure you have the following installed on your system:
+- [Node.js](https://nodejs.org/)
+- [Truffle](https://www.trufflesuite.com/truffle)
+- [Ganache](https://www.trufflesuite.com/ganache)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Setting Up Environment Variables
+After deploying the smart contract, you'll need to create a local `.env` file in the root directory of this project so that our frontend can interact with our smart contract.
