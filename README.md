@@ -27,4 +27,18 @@ Ensure you have the following installed on your system:
 - [Ganache](https://www.trufflesuite.com/ganache)
 
 ### Setting Up Environment Variables
-After deploying the smart contract, you'll need to create a local `.env` file in the root directory of this project so that our frontend can interact with our smart contract.
+After deploying the smart contract, you'll need to create a local .env file in the root directory of this project so that our frontend can interact with our smart contract. Follow these steps:
+
+- After running truffle migrate, note the contract address from the output. It will look something like:
+  
+      0x1234567890abcdef1234567890abcdef12345678
+
+- In the root directory of your project, create a file named .env.
+
+- Add the Contract Address to the .env File:
+
+      NEXT_PUBLIC_CONTRACT_ADDRESS=0x1234567890abcdef1234567890abcdef12345670
+      
+   - Replace the placeholder address with the actual address from the deployment output.
+
+By following these steps, you'll have the FLIP smart contract deployed on your local Ethereum network and properly configured for use in your frontend application. Happy betting!
